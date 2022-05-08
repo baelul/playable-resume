@@ -949,9 +949,6 @@ function preload() {
 function setup() {
   createCanvas(640, 640);
   var i, j;
-
-  // looping music
-  background_music.loop()
 }
 function draw() {
   background(255);
@@ -984,6 +981,9 @@ function draw() {
   drawSprites(); // draws all sprites, no need for animation()
 
   text_directions();
+}
+function mouseClicked() { // UI to bypass Chrome autoplay restrictions
+  background_music.loop()
 }
 function collision_check() {
   r_end = x >= 2550; // end of map
