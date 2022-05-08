@@ -250,7 +250,7 @@ function preload() {
   // font
   pixelated_font = loadFont("Apple.ttf");
   title_font = loadFont("Adventurer.ttf");
-  
+
   // music
   background_music = loadSound("Morning-Routine-Lofi-Study-Music.mp3")
 
@@ -949,7 +949,7 @@ function preload() {
 function setup() {
   createCanvas(640, 640);
   var i, j;
-  
+
   // looping music
   background_music.loop()
 }
@@ -1016,17 +1016,17 @@ function collision_check() {
   cannot_move_y_down = box4 || box8;
 
   //check collide boxes when mouse pressed
-  metro.debug = mouseIsPressed;
-  pp_build.debug = mouseIsPressed;
-  b_blue.debug = mouseIsPressed;
-  redstatue.debug = mouseIsPressed;
-  b_g.debug = mouseIsPressed;
-  c.debug = mouseIsPressed;
-  house.debug = mouseIsPressed;
-  shed.debug = mouseIsPressed;
-  for (i = 0; i < collision_group.length; i++) {
-    collision_group[i].debug = mouseIsPressed;
-  }
+  // metro.debug = mouseIsPressed;
+  // pp_build.debug = mouseIsPressed;
+  // b_blue.debug = mouseIsPressed;
+  // redstatue.debug = mouseIsPressed;
+  // b_g.debug = mouseIsPressed;
+  // c.debug = mouseIsPressed;
+  // house.debug = mouseIsPressed;
+  // shed.debug = mouseIsPressed;
+  // for (i = 0; i < collision_group.length; i++) {
+  //   collision_group[i].debug = mouseIsPressed;
+  // }
 
   // change depth
   redstatue.depth = c.depth + 1;
