@@ -4,6 +4,7 @@ var title_font;
 
 // music
 var background_music
+var music_off = true
 
 // camera values (camera is centered so vals are halved)
 var TITLE = 320;
@@ -983,7 +984,10 @@ function draw() {
   text_directions();
 }
 function mouseClicked() { // UI to bypass Chrome autoplay restrictions
-  background_music.loop()
+  if (music_off) {
+    music_off = false
+    background_music.loop()
+  }
 }
 function collision_check() {
   r_end = x >= 2550; // end of map
