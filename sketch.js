@@ -1085,28 +1085,28 @@ function render_character() {
       c.animation.play();
 
       if (!cannot_move_x_left && !collision_check()) {
-        x -= 7;
+        x -= 3;
       }
     } else if (keyCode === RIGHT_ARROW || keyCode === 68) {
       c.changeAnimation("right");
       c.animation.play();
 
       if (!cannot_move_x_right && !collision_check()) {
-        x += 7;
+        x += 3;
       }
     } else if (keyCode === DOWN_ARROW || keyCode === 83) {
       c.changeAnimation("down");
       c.animation.play();
 
       if (!cannot_move_y_down) {
-        y += 7;
+        y += 3;
       }
     } else if (keyCode === UP_ARROW || keyCode === 87) {
       c.changeAnimation("up");
       c.animation.play();
 
       if (!cannot_move_y_up && !collision_check()) {
-        y -= 7;
+        y -= 3;
       }
     }
     preclick = false;
